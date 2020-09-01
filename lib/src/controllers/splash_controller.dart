@@ -8,7 +8,7 @@ class SplashController extends GetxController {
   void onReady() {
     super.onReady();
     Future.delayed(Duration(seconds: 2), () {
-      Get.to(HomePage(), transition: Transition.zoom);
+      Get.off(HomePage(), transition: Transition.zoom);
     });
   }
 }

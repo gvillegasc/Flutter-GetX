@@ -6,6 +6,9 @@ class SplashPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetBuilder<SplashController>(
+      dispose: (_) {
+        print("normal dispose");
+      },
       init: SplashController(),
       builder: (_) => Scaffold(
         body: Center(
